@@ -1,0 +1,12 @@
+Package: statdesk
+Type: Package
+Title: Statistiques descriptives pour variables qualitatives
+Version: 0.1.0
+Author: Arno Muller
+Maintainer: Arno Muller <arno.muller@ined.fr>
+Description: Accompagner la production de statistiques descriptives de l'import des données à leurs visualisations sous forme de tableaux synthétiques ou de graphiques et leurs sauvegardes.
+    L'application permet également de recoder et de réordonner les variables.
+Imports: shiny, shinyWidgets, shinythemes, fresh, openxlsx, dplyr, sortable, tidyr, DT, ggplot2, colourpicker, RColorBrewer, plotly
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
