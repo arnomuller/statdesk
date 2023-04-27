@@ -3,7 +3,53 @@ Interface Shiny développée dans le cadre du projet Apprentis Chercheur de l'In
 
 ## Installation du package
 
+### Solution 1
+**Installation locale**
 
+1) Télécharger le package contenu dans le fichier "statdesk_0.1.0.tar" dans le dossier "package 'statdesk'"
+
+2) Dans R, lancer les codes suivants :
+
+```{r }
+# Liste des dépendances
+.packages = c("shiny", "shinyWidgets", "shinythemes", "fresh", "openxlsx", "dplyr", "sortable",
+              "tidyr", "DT", "ggplot2", "colourpicker", "RColorBrewer", "plotly")
+# Installation des manquantes
+.new.packages <- .packages[!(.packages %in% installed.packages()[,"Package"])]
+if(length(.new.packages)) install.packages(.new.packages)
+
+# Installer statdesk
+install.packages("chemin/statdesk_0.1.0.tar.gz", repos = NULL, type = "source")
+```
+
+3) Ouvrir l'application
+
+```{r }
+library(statdesk)
+statdesk()
+```
+
+### Solution 1
+**Installation depuis Github**
+
+1) Dans R, installer le package "devtools"
+
+```{r }
+install.packages("devtools")
+```
+
+2) Installer le package "statdesk"
+
+```{r }
+library("devtools")
+install_github("arnomuller/statdesk")
+```
+
+3) Lancer l'application
+```{r }
+library(statdesk)
+statdesk()
+```
 
 
 
