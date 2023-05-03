@@ -29,7 +29,7 @@ library(statdesk)
 statdesk()
 ```
 
-### Solution 1
+### Solution 2
 **Installation depuis Github**
 
 1) Dans R, installer le package "devtools"
